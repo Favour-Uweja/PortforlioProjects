@@ -1,0 +1,37 @@
+
+---
+
+# COVID-19 Data Analysis
+
+This repository contains SQL queries designed to extract and analyze data from the COVID-19 dataset, focusing on death tolls, population impacts, and vaccination efforts. The goal is to provide a deeper understanding of how the pandemic has affected different regions and the progress of vaccination campaigns.
+
+## Dataset
+
+**Source of Dataset**: https://shorturl.at/bdpCN
+owid - Our World in Data (`owid-covid-data`) 
+
+The queries are based on the `owid-covid-data` dataset, which includes detailed information on COVID-19 cases, deaths, and vaccinations worldwide. The dataset is split into two main tables:
+- `owid-covid-dataDeath`: Contains data related to COVID-19 deaths.
+- `owid-covid-dataVac`: Contains data related to COVID-19 vaccinations.
+
+## Queries
+
+1. **Whole Data of Covid 19 Deaths**: Returns all records from the death data table.
+2. **Maximum Death Count For Each Country**: Calculates the highest number of deaths in each country and the percentage of the population that has died due to COVID-19.
+3. **Country with Highest Death Toll per Continent**: Identifies the country with the highest COVID-19 death toll on each continent.
+4. **Continental Mortality**: Summarizes total deaths by continent.
+5. **Comparing Continent-Specific Death Counts and Percentages**: Analyzes death counts and percentages across different continents, correlating with population and wealth demographics.
+6. **Global COVID-19 Stats**: Shows global totals for cases and deaths, ordered by date.
+7. **Combining COVID-19 Deaths and Vaccination Data**: Provides a comprehensive analysis by combining death and vaccination data.
+8. **Examining Total Population in Relation to Cumulative New Vaccinations**: Uses both common table expressions and temporary tables to calculate cumulative vaccination percentages.
+
+## Setup
+
+To run these queries, ensure you have access to a SQL Server or any SQL-compatible database environment, download the data set from: https://shorturl.at/bdpCN 
+where the `owid-covid-data` dataset is hosted. Import the data accordingly, and execute the SQL scripts contained in this repository.
+
+## Contributing
+
+Feel free to fork this repository and submit pull requests with enhancements or additional queries that could provide further insights. For any issues or suggestions, open an issue on this repository.
+
+---
